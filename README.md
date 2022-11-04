@@ -44,3 +44,33 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## 🧱 如何提交的代码
+1、git add .
+> 本项目使用 husky 来拦截不符合要求的 commit（纳入版本库使用npm run commit）: 
+type（单选）（必填）
+    feat 一个新的功能
+    fix 修复了一个bug
+    docs 仅仅是文档的变动
+    style 样式的改动
+    build 影响构建系统的改动，例如修改package， 打包配置文件等
+    chore 不修改src目录以及test目录下的其他修改
+    ci 更改ci配置文件和脚本
+    perf 提高性能的代码更改
+    refactor 既不修复错误也不添加功能的更改
+    revert 回滚
+    test 添加测试文件或者更改现有的测试文件
+scope 此更改的范围是什么（例如组件或文件名）（选填）
+subject 一个简短描述来说明此次更新（必填）
+body 提供更为详细的描述信息（选填）
+footer 可以是关闭的issue的id （选填）
+
+最后git push origin (分支名)  完成提交
+
+## 涉及相关技术说明
+
+| 名称           | 地址                                         |
+| -------------- | -------------------------------------------- |
+| Vue3           | <https://vuejs.org/>                         |
+| TypeScript     | <https://www.typescriptlang.org/>            |
+| Vite           | <https://cn.vitejs.dev/>                     |
